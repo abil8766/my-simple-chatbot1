@@ -40,7 +40,7 @@ generator = load_model()
 # st.session_state - это специальный объект Streamlit, который не сбрасывается
 # при взаимодействиях пользователя.
 if 'history' not in st.session_state:
-    st.session_state['history'] = ""
+    st.session_state['history'] = "Ты - вежливый и полезный чат-бот-ассистент по имени Нейроныч. Ты отвечаешь на вопросы кратко и по делу."
 
 # Выводим историю чата на экран
 if st.session_state.history:
