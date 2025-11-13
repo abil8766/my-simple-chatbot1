@@ -21,7 +21,7 @@ def generate_response(prompt, generator):
         max_length=len(prompt.encode('utf-8')) + 60,
         num_return_sequences=1,
         no_repeat_ngram_size=2,
-        temperature=0.7,
+        temperature=0.3,
         top_k=40
     )
     full_text = generated[0]['generated_text']
